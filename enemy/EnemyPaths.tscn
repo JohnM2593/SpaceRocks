@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://daa2jjwwbtw8i"]
+
+[sub_resource type="Curve2D" id="Curve2D_woblh"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -64, 192, -51.6721, -19.5998, 51.6721, 19.5998, 192, 384, -121.162, 114.035, 121.162, -114.035, 704, 256, -23.1634, 83.7445, 23.1634, -83.7445, 832, 56, 361.705, 3.56359, -361.705, -3.56359, 512, -136)
+}
+point_count = 5
+
+[sub_resource type="Curve2D" id="Curve2D_qbor6"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -202, 320, -194.887, -26.6968, 194.887, 26.6968, 150, 440, -160.181, 5.33936, 160.181, -5.33936, 558, 240, -205.565, 90.7691, 205.565, -90.7691, 902, 464, 0, 0, 0, 0, 1414, -16)
+}
+point_count = 5
+
+[sub_resource type="Curve2D" id="Curve2D_plptt"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 128, 832, -85.4035, 76.4137, 85.4035, -76.4137, 488, 608, -86.9018, 109.376, 86.9018, -109.376, 608, 376, -52.4408, 143.837, 52.4408, -143.837, 944, 216, 0, 0, 0, 0, 1024, -112)
+}
+point_count = 5
+
+[sub_resource type="Curve2D" id="Curve2D_gup7j"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 320, -128, 8.90899, -94.4353, -8.90899, 94.4353, 192, 216, -103.344, -57.0175, 103.344, 57.0175, 232, 576, -103.344, 65.9265, 103.344, -65.9265, 928, 576, -8.90899, 206.689, 8.90899, -206.689, 1048, 280, 0, 0, 0, 0, 680, -176)
+}
+point_count = 6
+
+[sub_resource type="Curve2D" id="Curve2D_1a1on"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -64, -64, -66.0712, -41.5305, 66.0712, 41.5305, 328, 168, -96.2752, -94.3874, 96.2752, 94.3874, 624, 168, -143.469, -58.5202, 143.469, 58.5202, 720, 528, -132.142, -7.55099, 132.142, 7.55099, 1064, 544, 0, 0, 0, 0, 1272, 704)
+}
+point_count = 6
+
+[node name="EnemyPaths" type="Node"]
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_woblh")
+
+[node name="Path2D2" type="Path2D" parent="."]
+position = Vector2(1184, 704)
+rotation = -9.42225
+curve = SubResource("Curve2D_qbor6")
+
+[node name="Path2D3" type="Path2D" parent="."]
+curve = SubResource("Curve2D_plptt")
+
+[node name="Path2D4" type="Path2D" parent="."]
+curve = SubResource("Curve2D_gup7j")
+
+[node name="Path2D5" type="Path2D" parent="."]
+position = Vector2(1136, 672)
+rotation = 3.13848
+curve = SubResource("Curve2D_1a1on")
